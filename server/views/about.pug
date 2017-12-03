@@ -1,0 +1,12 @@
+html
+    head
+        title A propos
+        meta(http-equiv="Content-Type" content="text/html; charset=UTF-8")
+    body
+        h2 A propos ...
+        div Site permettant de retrouver ses affaires sévère
+        div 
+            - const currentTime = new Date().getTime();
+            | Au fait, depuis le 1er janvier 1970, se sont écoulées #{currentTime} milliseconds
+            | avec le pipe, on peut écrire sur plusieurs lignes et afficher sur une seule
+            

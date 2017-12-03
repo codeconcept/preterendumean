@@ -11,4 +11,8 @@ router.get('/users', (req, res) => {
     res.json(users);
 });
 
+router.get('/about', (req, res) => {
+    res.render('../views/about');
+});
+
 module.exports = router;
