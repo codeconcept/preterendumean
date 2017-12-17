@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const itemController = require('../controllers/itemController');
 
 const users = require('../users');
 
@@ -18,5 +19,9 @@ router.get('/contact', (req, res) => {
 router.get('/about', (req, res) => {
     res.render('../views/about', { title: 'A propos'});
 });
+
+router.get('/items', itemController.getItems);
+
+router.post('/items', itemController.addItem);
 
 module.exports = router;
